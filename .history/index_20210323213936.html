@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Меня зовут Юсиф Гюльмалиев. Я Frontend Developer. Добро пожаловать на моё портфолио. По поводу сотрудничества и работы смотрите секцию Контакты">
+	<meta name="author" content="Yusif">
+
+	<title>Yusif Gulmaliev (ReactJS / Frontend Developer) - My Personal Portfolio</title>
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway:400,300,500,700,800">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Share+Tech+Mono">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lobster">
+	<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+	<link href="css/font-awesome.min.css" rel="stylesheet" media="screen">
+	<link href="css/simple-line-icons.css" rel="stylesheet" media="screen">
+	<link href="css/animate.css" rel="stylesheet">
+    
+	<!-- Custom styles CSS -->
+	<link href="css/style.css" rel="stylesheet" media="screen">
+       
+</head>
+<body>
+
+<!--Preloader-->
+<div id="preloader">
+	<div id="status"></div>
+</div>
+
+	<!-- Home start -->
+	<section id="home" class="pfblock-image screen-height">
+        <div class="home-overlay"></div>
+		<div class="intro">
+			<div class="start">Hello, my name is Yusif Gulmaliev and I am</div>
+			<div class="front">
+				<h1 style="display: none;">FrontEnd Developer</h1>
+				<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+					 width="1000px" height="100px" viewBox="0 0 600 100">
+					<style type="text/css">
+
+						<![CDATA[
+
+					text {
+							filter: url(#filter);
+							fill: white;
+							font-family: 'Share Tech Mono', sans-serif;
+							font-size: 100px;
+							-webkit-font-smoothing: antialiased;
+							-moz-osx-font-smoothing: grayscale;
+						}
+						]]>
+					</style>
+					<defs>
+
+						<filter id="filter">
+							<!--<feFlood flood-color="black" result="black" />-->
+							<feFlood flood-color="red" result="flood1" />
+							<feFlood flood-color="limegreen" result="flood2" />
+							<feOffset in="SourceGraphic" dx="3" dy="0" result="off1a"/>
+							<feOffset in="SourceGraphic" dx="2" dy="0" result="off1b"/>
+							<feOffset in="SourceGraphic" dx="-3" dy="0" result="off2a"/>
+							<feOffset in="SourceGraphic" dx="3" dy="6" result="off2b"/>
+							<feComposite in="flood1" in2="off1a" operator="in"  result="comp1" />
+							<feComposite in="flood2" in2="off2a" operator="in" result="comp2" />
+
+							<feMerge x="0" width="100%" result="merge1">
+								<feMergeNode in = "black" />
+								<feMergeNode in = "comp1" />
+								<feMergeNode in = "off1b" />
+
+								<animate
+										attributeName="y"
+										id = "y"
+										dur ="4s"
+
+										values = '104px; 104px; 30px; 105px; 30px; 2px; 2px; 50px; 40px; 105px; 105px; 20px; 6ßpx; 40px; 104px; 40px; 70px; 10px; 30px; 104px; 102px'
+
+										keyTimes = '0; 0.362; 0.368; 0.421; 0.440; 0.477; 0.518; 0.564; 0.593; 0.613; 0.644; 0.693; 0.721; 0.736; 0.772; 0.818; 0.844; 0.894; 0.925; 0.939; 1'
+
+										repeatCount = "indefinite" />
+
+								<animate attributeName="height"
+										 id = "h"
+										 dur ="4s"
+
+										 values = '10px; 0px; 10px; 30px; 50px; 0px; 10px; 0px; 0px; 0px; 10px; 50px; 40px; 0px; 0px; 0px; 40px; 30px; 10px; 0px; 50px'
+
+										 keyTimes = '0; 0.362; 0.368; 0.421; 0.440; 0.477; 0.518; 0.564; 0.593; 0.613; 0.644; 0.693; 0.721; 0.736; 0.772; 0.818; 0.844; 0.894; 0.925; 0.939; 1'
+
+										 repeatCount = "indefinite" />
+							</feMerge>
+
+
+							<feMerge x="0" width="100%"  result="merge2">
+								<feMergeNode in = "black" />
+								<feMergeNode in = "comp2" />
+								<feMergeNode in = "off2b" />
+
+								<animate attributeName="y"
+										 id = "y"
+										 dur ="4s"
+										 values = '103px; 104px; 69px; 53px; 42px; 104px; 78px; 89px; 96px; 100px; 67px; 50px; 96px; 66px; 88px; 42px; 13px; 100px; 100px; 104px;'
+
+										 keyTimes = '0; 0.055; 0.100; 0.125; 0.159; 0.182; 0.202; 0.236; 0.268; 0.326; 0.357; 0.400; 0.408; 0.461; 0.493; 0.513; 0.548; 0.577; 0.613; 1'
+
+										 repeatCount = "indefinite" />
+
+								<animate attributeName="height"
+										 id = "h"
+										 dur = "4s"
+
+										 values = '0px; 0px; 0px; 16px; 16px; 12px; 12px; 0px; 0px; 5px; 10px; 22px; 33px; 11px; 0px; 0px; 10px'
+
+										 keyTimes = '0; 0.055; 0.100; 0.125; 0.159; 0.182; 0.202; 0.236; 0.268; 0.326; 0.357; 0.400; 0.408; 0.461; 0.493; 0.513;  1'
+
+										 repeatCount = "indefinite" />
+							</feMerge>
+
+							<feMerge>
+								<feMergeNode in="SourceGraphic" />
+
+								<feMergeNode in="merge1" />
+								<feMergeNode in="merge2" />
+
+							</feMerge>
+						</filter>
+
+					</defs>
+
+					<g>
+						<text x="-178" y="80">FRONTEND DEVELOPER</text>
+					</g>
+				</svg>
+			</div>
+			<div class="start">creating modern and responsive Web Application</div>
+		</div>
+	</section>
+	<!-- Home end -->
+    
+	<!-- Portfolio start -->
+	<section id="portfolio" class="pfblock">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-sm-offset-3">
+					<div class="pfblock-header wow fadeInUp">
+						<h2 class="pfblock-title">My works</h2>
+						<div class="pfblock-line"></div>
+						<div class="pfblock-subtitle"></div>
+					</div>
+				</div>
+			</div><!-- .row -->
+
+			<div class="row">
+				<div class="col-sm-12">
+					<div class="wrap-portfolio">
+						<ul>
+							<li><button type="button" class="mixitup-control-active" data-filter="all">All</button></li>
+							<li><button type="button" data-filter=".cms">CMS</button></li>
+							<li><button type="button" data-filter=".lp">LP</button></li>
+							<li><button type="button" data-filter=".spa">SPA</button></li>
+							<li class="hidden"><button type="button" data-filter=".games">GAMES</button></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+            <div class="row portfolio">
+				<div class="mix spa col-xs-12 col-sm-4 col-md-4">
+					<div class="grid wow zoomIn">
+						<figure class="effect-bubba">
+							<img src="images/port-neagent.png" alt="Neagent"/>
+							<figcaption>
+								<h2>Search Room</h2>
+								<p><a target="_blank" href="https://github.com/MAXON-BY/react-hotel">Link</a></p>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+
+				<div class="mix lp col-xs-12 col-sm-4 col-md-4">
+					<div class="grid wow zoomIn">
+						<figure class="effect-bubba">
+							<img src="images/port-rxflowcbd.png" alt="img01"/>
+							<figcaption>
+								<h2>RxFlow CBD</h2>
+								<p><a target="_blank" href="http://rx-flow.com/">Link</a></p>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+				<div class="mix cms col-xs-12 col-sm-4 col-md-4">
+					<div class="grid wow zoomIn">
+						<figure class="effect-bubba">
+							<img src="images/port-cakes.png" alt="Custom Cakes"/>
+							<figcaption>
+								<h2>Custom Cakes</h2>
+								<p><a target="_blank" href="http://customcakesorlandofl.com/">Link</a></p>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+				<div class="mix cms col-xs-12 col-sm-4 col-md-4">
+					<div class="grid wow zoomIn">
+						<figure class="effect-bubba">
+							<img src="images/port-tooltrust.png" alt="Тултраст"/>
+							<figcaption>
+								<h2>Тултраст</h2>
+								<p><a target="_blank" href="https://tooltrust.of.by/">Link</a></p>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+				<div class="mix cms col-xs-12 col-sm-4 col-md-4">
+					<div class="grid wow zoomIn">
+						<figure class="effect-bubba">
+							<img src="images/port-liqveed.png" alt="liqveed"/>
+							<figcaption>
+								<h2>LiqVeed</h2>
+								<p><a target="_blank" href="https://liqveed.com/">Link</a></p>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+				<div class="mix lp col-xs-12 col-sm-4 col-md-4">
+					<div class="grid wow zoomIn">
+						<figure class="effect-bubba">
+							<img src="images/port-qbite.png" alt="QBite"/>
+							<figcaption>
+								<h2>QBite</h2>
+								<p><a target="_blank" href="https://q-bite.com/">Link</a></p>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+				<div class="mix cms col-xs-12 col-sm-4 col-md-4">
+					<div class="grid wow zoomIn">
+						<figure class="effect-bubba">
+							<img src="images/port-edstone.png" alt="EdStone"/>
+							<figcaption>
+								<h2>EdStone</h2>
+								<p><a target="_blank" href="https://edstoneinc.com/">Link</a></p>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+				<div class="mix cms col-xs-12 col-sm-4 col-md-4">
+					<div class="grid wow zoomIn">
+						<figure class="effect-bubba">
+							<img src="images/port-ezmevents.png" alt="EzmEvents"/>
+							<figcaption>
+								<h2>EzmEvents</h2>
+								<p><a target="_blank" href="http://ezmevents.com/">Link</a></p>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+				<div class="mix spa col-xs-12 col-sm-4 col-md-4">
+					<div class="grid wow zoomIn">
+						<figure class="effect-bubba">
+							<img src="images/port-searchgit.png" alt="Git User Search"/>
+							<figcaption>
+								<h2>Git Search User</h2>
+								<p><a target="_blank" href="https://github.com/MAXON-BY/react-gitSearch">Link</a></p>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+
+                <div class="mix cms col-xs-12 col-sm-4 col-md-4">
+                    <div class="grid wow zoomIn">
+                        <figure class="effect-bubba">
+                            <img src="images/port-1.png" alt="img01"/>
+                            <figcaption>
+                                <h2>Calstate</h2>
+                                <p><a target="_blank" href="http://calstatemoving.com/">Link</a></p>
+                            </figcaption>			
+                        </figure>
+                    </div>
+                </div>
+                <div class="mix cms col-xs-12 col-sm-4 col-md-4">
+                    <div class="grid wow zoomIn">
+                        <figure class="effect-bubba">
+                            <img src="images/port-2.png" alt="img01"/>
+                            <figcaption>
+                                <h2>IMPA</h2>
+                                <p><a target="_blank" href="http://impalab.com/">Link</a></p>
+                            </figcaption>			
+                        </figure>
+                    </div>
+                </div>
+                <div class="mix cms col-xs-12 col-sm-4 col-md-4">
+                    <div class="grid wow zoomIn">
+                        <figure class="effect-bubba">
+                            <img src="images/port-3.png" alt="img01"/>
+                            <figcaption>
+                                <h2>Кони-Пони</h2>
+								<p><a target="_blank" href="http://koniponitur.by/">Link</a></p>
+                            </figcaption>			
+                        </figure>
+                    </div>
+                </div>
+                <div class="mix cms col-xs-12 col-sm-4 col-md-4">
+                    <div class="grid wow zoomIn">
+                        <figure class="effect-bubba">
+                            <img src="images/port-4.png" alt="img01"/>
+                            <figcaption>
+                                <h2>Dmitry Shumanev</h2>
+								<p><a target="_blank" href="http://shumanev.com/">Link</a></p>
+                            </figcaption>			
+                        </figure>
+                    </div>
+                </div>
+				<div class="mix lp col-xs-12 col-sm-4 col-md-4">
+					<div class="grid wow zoomIn">
+						<figure class="effect-bubba">
+							<img src="images/port-5.png" alt="img01"/>
+							<figcaption>
+								<h2>LA MOVING CENTRE</h2>
+								<p><a target="_blank" href="http://www.lamovingcentre.com/">Link</a></p>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+				<div class="mix cms col-xs-12 col-sm-4 col-md-4">
+					<div class="grid wow zoomIn">
+						<figure class="effect-bubba">
+							<img src="images/port-8.png" alt="img01"/>
+							<figcaption>
+								<h2>Apex</h2>
+								<p><a target="_blank" href="http://apexsigncompany.com/">Link</a></p>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+				<div class="mix lp col-xs-12 col-sm-4 col-md-4">
+					<div class="grid wow zoomIn">
+						<figure class="effect-bubba">
+							<img src="images/port-9.png" alt="img01"/>
+							<figcaption>
+								<h2>EuroStyle</h2>
+								<p><a target="_blank" href="http://microneedlingwinterpark.com/">Link</a></p>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+				<div class="mix lp col-xs-12 col-sm-4 col-md-4">
+					<div class="grid wow zoomIn">
+						<figure class="effect-bubba">
+							<img src="images/port-10.png" alt="img01"/>
+							<figcaption>
+								<h2>Gifter</h2>
+								<p><a target="_blank" href="http://giftermsq.com/">Link</a></p>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+				<div class="mix spa col-xs-12 col-sm-4 col-md-4">
+					<div class="grid wow zoomIn">
+						<figure class="effect-bubba">
+							<img src="images/port-weather.png" alt="Weather"/>
+							<figcaption>
+								<h2>Weather</h2>
+								<p><a target="_blank" href="https://github.com/MAXON-BY/react-weather">Link</a></p>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+
+				<div class="mix cms col-xs-12 col-sm-4 col-md-4">
+					<div class="grid wow zoomIn">
+						<figure class="effect-bubba">
+							<img src="images/port-12.png" alt="img01"/>
+							<figcaption>
+								<h2>NSVnail</h2>
+								<p><a target="_blank" href="http://nsvnail.by/">Link</a></p>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+				<div class="mix cms col-xs-12 col-sm-4 col-md-4">
+					<div class="grid wow zoomIn">
+						<figure class="effect-bubba">
+							<img src="images/port-13.png" alt="img01"/>
+							<figcaption>
+								<h2>iloveugly</h2>
+								<p><a target="_blank" href="https://www.iloveugly.com/">Link</a></p>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+				<div class="mix lp col-xs-12 col-sm-4 col-md-4">
+					<div class="grid wow zoomIn">
+						<figure class="effect-bubba">
+							<img src="images/port-15.png" alt="img01"/>
+							<figcaption>
+								<h2>borovaya</h2>
+								<p><a target="_blank" href="http://parts.borovaya.by/">Link</a></p>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+				<div class="mix lp col-xs-12 col-sm-4 col-md-4">
+					<div class="grid wow zoomIn">
+						<figure class="effect-bubba">
+							<img src="images/port-16.png" alt="img01"/>
+							<figcaption>
+								<h2>Canon</h2>
+								<p><a target="_blank" href="http://service.k-mash.by/">Link</a></p>
+							</figcaption>
+						</figure>
+					</div>
+				</div>
+            </div>
+		</div><!-- .contaier -->
+	</section>
+	<!-- Portfolio end -->
+    
+    <!-- Skills start -->
+    <section class="pfblock pfblock-gray" id="skills">
+			<div class="container">
+				<div class="row skills">
+					<div class="row">
+                        <div class="col-sm-6 col-sm-offset-3">
+                            <div class="pfblock-header wow fadeInUp">
+                                <h2 class="pfblock-title">My Skills</h2>
+                                <div class="pfblock-line"></div>
+                                <div class="pfblock-subtitle"></div>
+                            </div>
+                        </div>
+                    </div><!-- .row -->
+
+					<div class="row row-flex">
+						<div class="col-sm-6 col-md-2 text-center wow fadeInUp">
+							<img src="images/boot.png" alt="Bootstrap">
+						</div>
+						<div class="col-sm-6 col-md-2 text-center wow fadeInUp">
+							<img src="images/css.png" alt="CSS">
+						</div>
+						<div class="col-sm-6 col-md-2 text-center wow fadeInUp">
+							<img src="images/git.png" alt="Git" style="max-width: 100%">
+						</div>
+						<div class="col-sm-6 col-md-2 text-center wow fadeInUp">
+							<img src="images/gulp.png" alt="Gulp">
+						</div>
+						<div class="col-sm-6 col-md-2 text-center wow fadeInUp">
+							<img src="images/html5.png" alt="HTML">
+						</div>
+						<div class="col-sm-6 col-md-2 text-center wow fadeInUp">
+							<img src="images/JQuery.png" alt="Jquery" style="max-width: 100%">
+						</div>
+						<div class="col-sm-6 col-md-2 text-center wow fadeInUp">
+							<img src="images/js.png" alt="JS">
+						</div>
+						<div class="col-sm-6 col-md-2 text-center wow fadeInUp">
+							<img src="images/mysql.png" alt="MySql">
+						</div>
+						<div class="col-sm-6 col-md-2 text-center wow fadeInUp">
+							<img src="images/node.png" alt="Node">
+						</div>
+						<div class="col-sm-6 col-md-2 text-center wow fadeInUp">
+							<img src="images/npm.png" alt="npm">
+						</div>
+						<div class="col-sm-6 col-md-2 text-center wow fadeInUp">
+							<img src="images/php.png" alt="PHP">
+						</div>
+						<div class="col-sm-6 col-md-2 text-center wow fadeInUp">
+							<img src="images/sass.png" alt="SASS">
+						</div>
+						<div class="col-sm-6 col-md-2 text-center wow fadeInUp">
+							<img src="images/sourcetree.png" alt="SourceTree">
+						</div>
+						<div class="col-sm-6 col-md-2 text-center wow fadeInUp">
+							<img src="images/storm.png" alt="Storm">
+						</div>
+						<div class="col-sm-6 col-md-2 text-center wow fadeInUp">
+							<img src="images/wp.png" alt="WordPress">
+						</div>
+						<div class="col-sm-6 col-md-2 text-center wow fadeInUp">
+							<img src="images/Joomla.png" alt="joomla">
+						</div>
+						<div class="col-sm-6 col-md-2 text-center wow fadeInUp">
+							<img src="images/magento.png" alt="magento">
+						</div>
+						<div class="col-sm-6 col-md-2 text-center wow fadeInUp">
+							<img src="images/ps.png" alt="photoshop">
+						</div>
+						<div class="col-sm-6 col-md-2 text-center wow fadeInUp">
+							<img src="images/sublime.png" alt="sublime">
+						</div>
+						<div class="col-sm-6 col-md-2 text-center wow fadeInUp">
+							<img src="images/notepad.png" alt="notepad">
+						</div>
+					</div>
+				</div><!--End row -->
+			</div>
+    </section>
+    <!-- Skills end -->
+
+	<!-- Contact start -->
+	<section id="contact" class="pfblock" style="background-color: #ddddddf0; min-height: 86vh;">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-6 col-sm-offset-3">
+					<div class="pfblock-header">
+						<h2 class="pfblock-title">Contacts</h2>
+						<div class="pfblock-line"></div>
+						<div class="pfblock-subtitle"></div>
+					</div>
+				</div>
+			</div><!-- .row -->
+
+			<div class="row">
+				<div class="col-sm-6" style="padding-right: 25px">
+					<div class="my-photo"><img style="width: 63%; float: right;" src="images/myphoto.jpg" alt="Max Nyrkov"></div>
+				</div>
+
+				<div class="col-sm-6" style="padding-left: 25px">
+					<div class="contact-block phone">
+						<h4>Phone</h4>
+						<p><a href="tel:+375292699486">+375 29 269-94-86</a></p>
+					</div>
+					<div class="contact-block mail">
+						<h4>Mail</h4>
+						<p><a href="mailto:yuzik247@gmail.com">yuzik247@gmail.com</a></p>
+					</div>
+				</div>
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</section>
+	<!-- Contact end -->
+
+	<!-- Footer start -->
+	<footer id="footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-12">
+                    <p class="copyright">
+                        © 2020 Юсиф Гюльмалиев
+					</p>
+				</div>
+			</div><!-- .row -->
+		</div><!-- .container -->
+	</footer>
+	<!-- Footer end -->
+
+	<!-- Javascript files -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	<script src="js/jquery.parallax-1.1.3.js"></script>
+	<script src="js/mixitup.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/custom.js"></script>
+
+</body>
+</html>
+
+<!-- Yandex.Metrika counter -->
+<script type="text/javascript" >
+	(function (d, w, c) {
+		(w[c] = w[c] || []).push(function() {
+			try {
+				w.yaCounter48475259 = new Ya.Metrika({
+					id:48475259,
+					clickmap:true,
+					trackLinks:true,
+					accurateTrackBounce:true,
+					webvisor:true
+				});
+			} catch(e) { }
+		});
+
+		var n = d.getElementsByTagName("script")[0],
+				s = d.createElement("script"),
+				f = function () { n.parentNode.insertBefore(s, n); };
+		s.type = "text/javascript";
+		s.async = true;
+		s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+		if (w.opera == "[object Opera]") {
+			d.addEventListener("DOMContentLoaded", f, false);
+		} else { f(); }
+	})(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/48475259" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
